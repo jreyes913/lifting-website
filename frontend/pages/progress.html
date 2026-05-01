@@ -1,0 +1,45 @@
+<div id="charts-grid">
+    <div id="weight-progression" class="chart-panel">
+        <div id="weight-progression-title" class="chart-label">
+            Body Weight Over Time
+        </div>
+        <canvas id="weight-progression-chart" class="chart"></canvas>
+    </div>
+    <div id="strength-progression" class="chart-panel">
+        <div id="strength-progression-title" class="chart-label">
+            Strength Progression
+        </div>
+        <div id="strength-controls" class="chart-controls">
+            <div class="control-group">
+                <label for="strength-exercise">Exercise</label>
+                <select id="strength-exercise">
+                    <option value="">-- Select Exercise --</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="strength-metric">Metric</label>
+                <select id="strength-metric">
+                    <option value="weight">Weight</option>
+                    <option value="load">Load</option>
+                    <option value="intensity">Intensity</option>
+                    <option value="rtl">RTL</option>
+                    <option value="volume">Volume</option>
+                    <option value="1RM">1RM</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" />
+            </div>
+            <div class="control-group">
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" />
+            </div>
+            <div class="control-group" style="justify-content: flex-end;">
+                <button type="button" id="update-strength-btn" class="edit-sets-btn" style="height: 38px; width: 100%;">PLOT</button>
+            </div>
+        </div>
+        <div id="strength-chart-message" style="text-align: center; color: var(--color-gray); font-style: italic; margin-bottom: 10px; display: none;"></div>
+        <canvas id="strength-progression-chart" class="chart"></canvas>
+    </div>
+</div>

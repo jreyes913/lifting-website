@@ -1,0 +1,1088 @@
+/* ============================================================
+   PROXIMAL50 — main.css
+   Design System: Clinical-Industrial / Modern Wellness
+   Theme: High-contrast, minimalist, action-oriented.
+   ============================================================ */
+
+/* Google Fonts — Montserrat (Modern Geometric Sans-Serif) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* ============================================================
+   CSS Custom Properties
+   ============================================================ */
+:root {
+  /* Color Palette */
+  --color-white:         #FFFFFF;
+  --color-orange:        #F28C38;
+  --color-orange-dark:   #D97B2F;
+  --color-orange-tint:   rgba(242, 140, 56, 0.08);
+  --color-charcoal:      #333333;
+  --color-gray:          #707070;
+  --color-bg:            #F4F4F4;
+  --color-border:        #E2E2E2;
+  --color-danger:        #C0392B;
+  --color-danger-hover:  #A93226;
+
+  /* Typography */
+  --font-family: 'Montserrat', 'Roboto', 'Lato', sans-serif;
+
+  /* Shape */
+  --radius-pill: 50px;
+  --radius-card: 10px;
+  --radius-input: 6px;
+
+  /* Elevation */
+  --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.13);
+
+  /* Motion */
+  --transition: 0.18s ease;
+}
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   Page Shell
+   ============================================================ */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px 56px;
+}
+
+/* ============================================================
+   Page Header — Title + Navigation
+   ============================================================ */
+
+/* Level-2 header: all-caps, bold, orange — primary value label */
+#page-title {
+  padding: 36px 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-orange);
+}
+
+/* Nav bar beneath the title */
+#home-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0 20px;
+  border-bottom: 2px solid var(--color-border);
+  margin-bottom: 36px;
+}
+
+/* Navigation interface button — Level 3 typography */
+#home-nav button {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray);
+  background: transparent;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 6px 22px;
+  cursor: pointer;
+  transition: color var(--transition),
+              border-color var(--transition),
+              background-color var(--transition);
+}
+
+#home-nav button:hover {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+  background-color: var(--color-orange-tint);
+}
+
+/* ============================================================
+   Form Sections — Create containers
+   ============================================================ */
+
+#create-athlete,
+#create-lift,
+#create-goal,
+#create-block,
+#create-set {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 0 12px 12px 12px;
+  padding: 32px 40px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-card);
+}
+
+/* Section/Category header — Level 2 typography */
+#create-athlete-title,
+#create-lift-title,
+#create-goal-title,
+#create-block-title,
+#create-set-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-orange);
+  display: inline-block;
+}
+
+/* Form grid: label | input pairs */
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+/* Level 3 label — medium weight, gray */
+form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray);
+  white-space: nowrap;
+}
+
+/* Inputs and selects — Level 4 body copy size */
+form input,
+form select {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-input);
+  padding: 8px 14px;
+  width: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(242, 140, 56, 0.16);
+}
+
+/* CTA submit button — solid orange, pill-style */
+form button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: start;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 34px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--color-orange-dark);
+  transform: translateY(-1px);
+}
+
+form button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* ============================================================
+   List Sections
+   ============================================================ */
+
+#athletes-list,
+#lifts-list,
+#goals-list,
+#blocks-list,
+#sets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+/* Static H2 inside athletes-list (visible briefly before JS populates) */
+#athletes-list h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  margin-bottom: 4px;
+}
+
+/* Blocks-list and sets-list use a plain div for the label */
+#blocks-list > div:first-child:not(.blocks-panel):not(.none-blocks-panel),
+#sets-list > div:first-child:not(.sets-panel):not(.none-sets-panel) {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   Panel Content Hierarchy — 2-line primary / meta structure
+   ============================================================ */
+
+.panel-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Flex row: primary label + badge on the same baseline (used in goals) */
+.panel-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Line 1: record identity — name, date, or weight×reps */
+.panel-primary {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  line-height: 1.4;
+}
+
+/* Inline badge: goal target (weight × reps) in orange tint pill */
+.panel-target {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-orange);
+  background: var(--color-orange-tint);
+  border: 1px solid rgba(242, 140, 56, 0.25);
+  padding: 1px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Line 2: supporting detail — age, body weight, start date */
+.panel-meta {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-gray);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   List Section Headers — persistent ::before labels
+   (JS clears innerHTML of these containers on load, so the
+    static child elements are lost. The ::before pseudo-element
+    survives and provides a stable section label.)
+   ============================================================ */
+
+#athletes-list::before,
+#lifts-list::before,
+#goals-list::before,
+#blocks-list::before,
+#sets-list::before {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-gray);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+#athletes-list::before { content: "Athletes"; }
+#lifts-list::before    { content: "Lifts"; }
+#goals-list::before    { content: "Goals"; }
+#blocks-list::before   { content: "Blocks"; }
+#sets-list::before     { content: "Sets"; }
+
+/* ============================================================
+   Athlete Page Section Separation — Lifts vs Goals
+   ============================================================ */
+
+/* Extra breathing room above the Goals form, visually starting
+   a new section on the athlete page */
+#create-goal {
+  margin-top: 52px;
+}
+
+/* ============================================================
+   Item Panels — Cards for each data row
+   ============================================================ */
+
+.athletes-panel,
+.lifts-panel,
+.goals-panel,
+.blocks-panel,
+.sets-panel,
+.programs-panel,
+.presets-panel,
+.preset-blocks-panel,
+.preset-sets-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 14px 20px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.athletes-panel:hover,
+.lifts-panel:hover,
+.goals-panel:hover,
+.blocks-panel:hover,
+.sets-panel:hover,
+.programs-panel:hover,
+.presets-panel:hover,
+.preset-blocks-panel:hover,
+.preset-sets-panel:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: #ccc;
+}
+
+/* Edit form layout */
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+.edit-form input,
+.edit-form select {
+  font-family: var(--font-family);
+  font-size: 13px;
+  padding: 4px 8px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-input);
+  min-width: 80px;
+}
+
+/* ============================================================
+   Panel Nav Buttons — clickable item labels
+   ============================================================ */
+
+.athlete-nav-btn,
+.lift-nav-btn,
+.goal-nav-btn,
+.block-nav-btn,
+.set-nav-btn,
+.program-nav-btn,
+.preset-nav-btn,
+.preset-block-nav-btn,
+.preset-set-nav-btn {
+  flex: 1;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-charcoal);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.athlete-nav-btn:hover,
+.lift-nav-btn:hover,
+.goal-nav-btn:hover,
+.block-nav-btn:hover,
+.set-nav-btn:hover,
+.program-nav-btn:hover,
+.preset-nav-btn:hover,
+.preset-block-nav-btn:hover,
+.preset-set-nav-btn:hover {
+  color: var(--color-orange);
+}
+
+/* Name spans — block display for clean layout */
+.athlete-name,
+.lift-name,
+.goal-name,
+.block-name,
+.set-name,
+.program-name,
+.preset-name,
+.preset-block-name,
+.preset-set-name {
+  display: block;
+}
+
+/* ============================================================
+   Action Buttons — Edit/Delete pill inside panels
+   ============================================================ */
+
+.panel-actions button,
+.edit-form button {
+  flex-shrink: 0;
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: transparent;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* Edit/Save primary button */
+.panel-actions button:first-child,
+.edit-form button:first-of-type {
+  color: var(--color-orange);
+  border: 1.5px solid var(--color-orange);
+}
+
+.panel-actions button:first-child:hover,
+.edit-form button:first-of-type:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+/* Delete/Cancel secondary button */
+.panel-actions button:last-child,
+.edit-form button:last-of-type {
+  color: var(--color-danger);
+  border: 1.5px solid var(--color-danger);
+}
+
+.panel-actions button:last-child:hover,
+.edit-form button:last-of-type:hover {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* Cancel specifically in edit form can be gray */
+.edit-form button:last-of-type {
+  color: var(--color-gray);
+  border: 1.5px solid var(--color-border);
+}
+
+.edit-form button:last-of-type:hover {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+/* ============================================================
+   Empty State Panels
+   ============================================================ */
+
+.none-athletes-panel,
+.none-lifts-panel,
+.none-goals-panel,
+.none-blocks-panel,
+.none-sets-panel {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-gray);
+  text-align: center;
+  padding: 24px 20px;
+  background: var(--color-white);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+/* ============================================================
+   Data Management Panel
+   ============================================================ */
+
+#data-management {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+  margin-top: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+#data-management-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-orange);
+  display: inline-block;
+}
+
+#data-management-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Export button — solid orange pill */
+#export-btn {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+#export-btn:hover {
+  background-color: var(--color-orange-dark);
+  transform: translateY(-1px);
+}
+
+#export-btn:active {
+  transform: translateY(0);
+}
+
+/* Import label acts as a styled button (wraps hidden file input) */
+#import-label {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-pill);
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition),
+              border-color var(--transition), transform var(--transition);
+}
+
+#import-label:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+#import-label:active {
+  transform: translateY(0);
+}
+
+/* Hide the actual file input — the label handles the click */
+#import-file {
+  display: none;
+}
+
+/* ============================================================
+   Toast Notifications
+   ============================================================ */
+
+.toast {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-hover);
+  z-index: 9999;
+  pointer-events: none;
+  animation: toast-in 0.2s ease;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.toast--success {
+  background-color: #2ECC71;
+  color: var(--color-white);
+}
+
+.toast--error {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.toast--loading {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+/* ============================================================
+   Progress Nav Button
+   ============================================================ */
+#progress-nav {
+  margin-bottom: 32px;
+}
+
+#progress-nav button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 28px;
+  background: linear-gradient(135deg, #f28c38 0%, #e67e22 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(242, 140, 56, 0.35);
+  transition: all var(--transition);
+}
+
+#progress-nav button::after {
+  content: ">";
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 12px;
+  opacity: 0.8;
+}
+
+#progress-nav button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(242, 140, 56, 0.45);
+}
+
+/* ============================================================
+   Programs Nav Button
+   ============================================================ */
+#programs-nav {
+  margin-bottom: -1px;
+  z-index: 10;
+  position: relative;
+}
+
+#programs-nav button {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  background: #f28c38;
+  border: none;
+  border-radius: 12px 12px 0 0;
+  padding: 10px 36px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+#programs-nav button:hover {
+  background-color: var(--color-orange-dark);
+}
+
+/* ============================================================
+   Lateral Navigation
+   ============================================================ */
+#lateral-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+#lateral-nav button {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+#lateral-nav button:hover:not(:disabled) {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  background-color: var(--color-orange-tint);
+}
+
+#lateral-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   Page Transitions
+   ============================================================ */
+#page-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-enter-forward {
+  animation: slide-in-right 0.3s ease-out forwards;
+}
+
+.page-enter-back {
+  animation: slide-in-left 0.3s ease-out forwards;
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ============================================================
+   Progress Page — Chart Controls
+   ============================================================ */
+
+.chart-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.control-group label {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gray);
+}
+
+.control-group select,
+.control-group input {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input);
+  padding: 8px 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.control-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23707070' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.control-group select:focus,
+.control-group input:focus {
+  outline: none;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(242, 140, 56, 0.16);
+}
+
+.control-group select:disabled,
+.control-group input:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   Progress Page — Charts Grid
+   ============================================================ */
+
+#charts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-panel {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.chart-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-orange);
+  display: inline-block;
+}
+
+.chart {
+  width: 100% !important;
+  height: 320px !important;
+}
+
+/* ============================================================
+   Responsive — Mobile (≤ 600px)
+   ============================================================ */
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 14px 40px;
+  }
+
+  #page-title {
+    font-size: 22px;
+    padding-top: 24px;
+  }
+
+  #create-athlete,
+  #create-lift,
+  #create-goal,
+  #create-block,
+  #create-set {
+    padding: 20px 18px;
+  }
+
+  /* Stack label above input on small screens */
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form label {
+    margin-bottom: -6px;
+  }
+
+  form button[type="submit"] {
+    width: 100%;
+    justify-self: stretch;
+    text-align: center;
+  }
+
+  /* Stack panel items vertically on mobile */
+  .athletes-panel,
+  .lifts-panel,
+  .goals-panel,
+  .blocks-panel,
+  .sets-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .athletes-panel > button:last-child,
+  .lifts-panel   > button:last-child,
+  .goals-panel   > button:last-child,
+  .blocks-panel  > button:last-child,
+  .sets-panel    > button:last-child {
+    align-self: flex-end;
+  }
+}
+
+/* ============================================================
+   Sets Table Styles
+   ============================================================ */
+
+.sets-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sets-table-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+}
+
+.edit-sets-btn {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  background: transparent;
+  border: 1.5px solid var(--color-orange);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.edit-sets-btn:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.sets-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 24px;
+}
+
+.sets-table th {
+  background-color: var(--color-bg);
+  color: var(--color-gray);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.sets-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sets-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Editing Table */
+.editing-table input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input);
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.editing-table input:focus {
+  outline: none;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 2px var(--color-orange-tint);
+}
+
+.row-delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-danger);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+  transition: opacity var(--transition);
+}
+
+.row-delete-btn:hover {
+  opacity: 0.7;
+}
+
+.table-edit-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.table-edit-actions button {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-pill);
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.table-edit-actions button:first-child {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-charcoal);
+  color: var(--color-charcoal);
+}
+
+.table-edit-actions button:first-child:hover {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.save-table-btn {
+  background: var(--color-orange);
+  border: none;
+  color: var(--color-white);
+}
+
+.save-table-btn:hover {
+  background: var(--color-orange-dark);
+  transform: translateY(-1px);
+}
+
+.table-edit-actions button:last-child {
+  background: transparent;
+  border: 1.5px solid var(--color-border);
+  color: var(--color-gray);
+}
+
+.table-edit-actions button:last-child:hover {
+  background: var(--color-border);
+  color: var(--color-charcoal);
+}

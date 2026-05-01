@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lifting Website</title>
+        <link rel="stylesheet" href="assets/main.css" />
+        <link rel="icon" href="./assets/barbell.ico" type="image/x-icon" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    </head>
+    <body>
+        <main>
+            <div id="page-title">Athletes</div>
+            <nav id="home-nav" data-athlete="" data-lift="" data-block="">
+                <button onclick="loadHomePage(event)">Home</button>
+            </nav>
+            <div id="page-content"></div>
+        </main>
+        <script src="api/script.js"></script>
+    </body>
+</html>

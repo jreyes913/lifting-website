@@ -1,0 +1,908 @@
+{
+  "export_metadata": {
+    "timestamp": "2026-04-05T20:52:34.484236+00:00",
+    "version": "2.0_nested"
+  },
+  "athletes": [
+    {
+      "id": 1,
+      "name": "Jose Reyes",
+      "dob": "2001-09-13T00:00:00",
+      "gender_id": 1,
+      "height": 73,
+      "xp": 11,
+      "goals": [
+        {
+          "id": 1,
+          "athlete_id": 1,
+          "start_date": "2026-04-04T00:00:00",
+          "duration": 16,
+          "exercise_id": 16,
+          "reps": 10,
+          "weight": 315
+        },
+        {
+          "id": 2,
+          "athlete_id": 1,
+          "start_date": "2026-03-28T00:00:00",
+          "duration": 16,
+          "exercise_id": 1,
+          "reps": 10,
+          "weight": 275
+        },
+        {
+          "id": 3,
+          "athlete_id": 1,
+          "start_date": "2026-03-30T00:00:00",
+          "duration": 16,
+          "exercise_id": 6,
+          "reps": 10,
+          "weight": 225
+        },
+        {
+          "id": 4,
+          "athlete_id": 1,
+          "start_date": "2026-04-01T00:00:00",
+          "duration": 16,
+          "exercise_id": 13,
+          "reps": 10,
+          "weight": 75
+        }
+      ],
+      "lifts": [
+        {
+          "id": 1,
+          "athlete_id": 1,
+          "date": "2026-04-04T00:00:00",
+          "body_weight": 218,
+          "exercise_blocks": [
+            {
+              "id": 1,
+              "lift_id": 1,
+              "exercise_id": 16,
+              "block_order": 1,
+              "goal_id": 1,
+              "exercise_sets": [
+                {
+                  "id": 1,
+                  "block_id": 1,
+                  "weight": 135,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 2,
+                  "block_id": 1,
+                  "weight": 225,
+                  "reps": 10,
+                  "rtl": 5,
+                  "set_order": 2
+                },
+                {
+                  "id": 3,
+                  "block_id": 1,
+                  "weight": 225,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 4,
+                  "block_id": 1,
+                  "weight": 225,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "lift_id": 1,
+              "exercise_id": 17,
+              "block_order": 2,
+              "goal_id": 1,
+              "exercise_sets": [
+                {
+                  "id": 5,
+                  "block_id": 2,
+                  "weight": 135,
+                  "reps": 20,
+                  "rtl": 5,
+                  "set_order": 1
+                },
+                {
+                  "id": 6,
+                  "block_id": 2,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 7,
+                  "block_id": 2,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 8,
+                  "block_id": 2,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "lift_id": 1,
+              "exercise_id": 18,
+              "block_order": 3,
+              "goal_id": 1,
+              "exercise_sets": [
+                {
+                  "id": 9,
+                  "block_id": 3,
+                  "weight": 15,
+                  "reps": 20,
+                  "rtl": 3,
+                  "set_order": 1
+                },
+                {
+                  "id": 10,
+                  "block_id": 3,
+                  "weight": 25,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 11,
+                  "block_id": 3,
+                  "weight": 25,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 3
+                },
+                {
+                  "id": 12,
+                  "block_id": 3,
+                  "weight": 25,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "lift_id": 1,
+              "exercise_id": 19,
+              "block_order": 4,
+              "goal_id": 1,
+              "exercise_sets": [
+                {
+                  "id": 13,
+                  "block_id": 4,
+                  "weight": 210,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 14,
+                  "block_id": 4,
+                  "weight": 290,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 15,
+                  "block_id": 4,
+                  "weight": 290,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 3
+                },
+                {
+                  "id": 16,
+                  "block_id": 4,
+                  "weight": 290,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "lift_id": 1,
+              "exercise_id": 20,
+              "block_order": 5,
+              "goal_id": 1,
+              "exercise_sets": [
+                {
+                  "id": 17,
+                  "block_id": 5,
+                  "weight": 70,
+                  "reps": 20,
+                  "rtl": 5,
+                  "set_order": 1
+                },
+                {
+                  "id": 18,
+                  "block_id": 5,
+                  "weight": 110,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 19,
+                  "block_id": 5,
+                  "weight": 110,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 3
+                },
+                {
+                  "id": 20,
+                  "block_id": 5,
+                  "weight": 110,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "athlete_id": 1,
+          "date": "2026-03-28T00:00:00",
+          "body_weight": 216,
+          "exercise_blocks": [
+            {
+              "id": 6,
+              "lift_id": 2,
+              "exercise_id": 1,
+              "block_order": 1,
+              "goal_id": 2,
+              "exercise_sets": [
+                {
+                  "id": 21,
+                  "block_id": 6,
+                  "weight": 135,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 22,
+                  "block_id": 6,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 23,
+                  "block_id": 6,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 24,
+                  "block_id": 6,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "lift_id": 2,
+              "exercise_id": 3,
+              "block_order": 2,
+              "goal_id": 2,
+              "exercise_sets": [
+                {
+                  "id": 25,
+                  "block_id": 7,
+                  "weight": 50,
+                  "reps": 20,
+                  "rtl": 3,
+                  "set_order": 1
+                },
+                {
+                  "id": 26,
+                  "block_id": 7,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 27,
+                  "block_id": 7,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 3
+                },
+                {
+                  "id": 28,
+                  "block_id": 7,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "lift_id": 2,
+              "exercise_id": 4,
+              "block_order": 3,
+              "goal_id": 2,
+              "exercise_sets": [
+                {
+                  "id": 29,
+                  "block_id": 8,
+                  "weight": 75,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 30,
+                  "block_id": 8,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 31,
+                  "block_id": 8,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 32,
+                  "block_id": 8,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "lift_id": 2,
+              "exercise_id": 2,
+              "block_order": 4,
+              "goal_id": 2,
+              "exercise_sets": [
+                {
+                  "id": 33,
+                  "block_id": 9,
+                  "weight": 50,
+                  "reps": 20,
+                  "rtl": 4,
+                  "set_order": 1
+                },
+                {
+                  "id": 34,
+                  "block_id": 9,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 35,
+                  "block_id": 9,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 3
+                },
+                {
+                  "id": 36,
+                  "block_id": 9,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "lift_id": 2,
+              "exercise_id": 5,
+              "block_order": 5,
+              "goal_id": 2,
+              "exercise_sets": [
+                {
+                  "id": 37,
+                  "block_id": 10,
+                  "weight": 30,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 38,
+                  "block_id": 10,
+                  "weight": 50,
+                  "reps": 10,
+                  "rtl": 4,
+                  "set_order": 2
+                },
+                {
+                  "id": 39,
+                  "block_id": 10,
+                  "weight": 50,
+                  "reps": 10,
+                  "rtl": 4,
+                  "set_order": 3
+                },
+                {
+                  "id": 40,
+                  "block_id": 10,
+                  "weight": 50,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "athlete_id": 1,
+          "date": "2026-03-30T00:00:00",
+          "body_weight": 219,
+          "exercise_blocks": [
+            {
+              "id": 11,
+              "lift_id": 3,
+              "exercise_id": 6,
+              "block_order": 1,
+              "goal_id": 3,
+              "exercise_sets": [
+                {
+                  "id": 41,
+                  "block_id": 11,
+                  "weight": 95,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 42,
+                  "block_id": 11,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 4,
+                  "set_order": 2
+                },
+                {
+                  "id": 43,
+                  "block_id": 11,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 44,
+                  "block_id": 11,
+                  "weight": 185,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "lift_id": 3,
+              "exercise_id": 9,
+              "block_order": 2,
+              "goal_id": 3,
+              "exercise_sets": [
+                {
+                  "id": 45,
+                  "block_id": 12,
+                  "weight": 90,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 46,
+                  "block_id": 12,
+                  "weight": 130,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 47,
+                  "block_id": 12,
+                  "weight": 130,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 48,
+                  "block_id": 12,
+                  "weight": 130,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "lift_id": 3,
+              "exercise_id": 7,
+              "block_order": 3,
+              "goal_id": 3,
+              "exercise_sets": [
+                {
+                  "id": 49,
+                  "block_id": 13,
+                  "weight": 30,
+                  "reps": 20,
+                  "rtl": 4,
+                  "set_order": 1
+                },
+                {
+                  "id": 50,
+                  "block_id": 13,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 51,
+                  "block_id": 13,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 3
+                },
+                {
+                  "id": 52,
+                  "block_id": 13,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 14,
+              "lift_id": 3,
+              "exercise_id": 10,
+              "block_order": 4,
+              "goal_id": 3,
+              "exercise_sets": [
+                {
+                  "id": 53,
+                  "block_id": 14,
+                  "weight": 90,
+                  "reps": 20,
+                  "rtl": 4,
+                  "set_order": 1
+                },
+                {
+                  "id": 54,
+                  "block_id": 14,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 55,
+                  "block_id": 14,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 56,
+                  "block_id": 14,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "lift_id": 3,
+              "exercise_id": 8,
+              "block_order": 5,
+              "goal_id": 3,
+              "exercise_sets": [
+                {
+                  "id": 57,
+                  "block_id": 15,
+                  "weight": 45,
+                  "reps": 20,
+                  "rtl": 2,
+                  "set_order": 1
+                },
+                {
+                  "id": 58,
+                  "block_id": 15,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 59,
+                  "block_id": 15,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 3
+                },
+                {
+                  "id": 60,
+                  "block_id": 15,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "athlete_id": 1,
+          "date": "2026-04-01T00:00:00",
+          "body_weight": 219,
+          "exercise_blocks": [
+            {
+              "id": 16,
+              "lift_id": 4,
+              "exercise_id": 11,
+              "block_order": 1,
+              "goal_id": 4,
+              "exercise_sets": [
+                {
+                  "id": 61,
+                  "block_id": 16,
+                  "weight": 20,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 62,
+                  "block_id": 16,
+                  "weight": 40,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 63,
+                  "block_id": 16,
+                  "weight": 40,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 3
+                },
+                {
+                  "id": 64,
+                  "block_id": 16,
+                  "weight": 40,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "lift_id": 4,
+              "exercise_id": 12,
+              "block_order": 2,
+              "goal_id": 4,
+              "exercise_sets": [
+                {
+                  "id": 65,
+                  "block_id": 17,
+                  "weight": 90,
+                  "reps": 20,
+                  "rtl": 3,
+                  "set_order": 1
+                },
+                {
+                  "id": 66,
+                  "block_id": 17,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 2
+                },
+                {
+                  "id": 67,
+                  "block_id": 17,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 68,
+                  "block_id": 17,
+                  "weight": 120,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 18,
+              "lift_id": 4,
+              "exercise_id": 13,
+              "block_order": 3,
+              "goal_id": 4,
+              "exercise_sets": [
+                {
+                  "id": 69,
+                  "block_id": 18,
+                  "weight": 25,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 70,
+                  "block_id": 18,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 3,
+                  "set_order": 2
+                },
+                {
+                  "id": 71,
+                  "block_id": 18,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 3
+                },
+                {
+                  "id": 72,
+                  "block_id": 18,
+                  "weight": 45,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 19,
+              "lift_id": 4,
+              "exercise_id": 14,
+              "block_order": 4,
+              "goal_id": 4,
+              "exercise_sets": [
+                {
+                  "id": 73,
+                  "block_id": 19,
+                  "weight": 30,
+                  "reps": 20,
+                  "rtl": 5,
+                  "set_order": 1
+                },
+                {
+                  "id": 74,
+                  "block_id": 19,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 1,
+                  "set_order": 2
+                },
+                {
+                  "id": 75,
+                  "block_id": 19,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 3
+                },
+                {
+                  "id": 76,
+                  "block_id": 19,
+                  "weight": 60,
+                  "reps": 10,
+                  "rtl": 0,
+                  "set_order": 4
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "lift_id": 4,
+              "exercise_id": 15,
+              "block_order": 5,
+              "goal_id": 4,
+              "exercise_sets": [
+                {
+                  "id": 77,
+                  "block_id": 20,
+                  "weight": 45,
+                  "reps": 20,
+                  "rtl": 6,
+                  "set_order": 1
+                },
+                {
+                  "id": 78,
+                  "block_id": 20,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 5,
+                  "set_order": 2
+                },
+                {
+                  "id": 79,
+                  "block_id": 20,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 4,
+                  "set_order": 3
+                },
+                {
+                  "id": 80,
+                  "block_id": 20,
+                  "weight": 90,
+                  "reps": 10,
+                  "rtl": 2,
+                  "set_order": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

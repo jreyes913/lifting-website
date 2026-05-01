@@ -1,0 +1,23 @@
+# Python
+.venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+
+# Node
+node_modules
+npm-debug.log
+package-lock.json
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode
+.idea
+
+# General
+.env
+.DS_Store
+.claude/

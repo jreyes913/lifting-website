@@ -1,0 +1,51 @@
+<div id="lateral-nav"></div>
+<div id="progress-nav">
+    <button type="button" onclick="loadProgressPage(event)">PROGRESS</button>
+</div>
+
+<div id="programs-nav">
+    <button type="button" onclick="loadProgramsPage(event)">PROGRAMS</button>
+</div>
+
+<div id="create-lift">
+    <div id="create-lift-title">RECORD LIFT</div>
+    <form onsubmit="createLift(event)">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="body-weight">Body Weight:</label>
+        <input type="number" id="body-weight" name="body-weight" />
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+
+<div id="lifts-list">
+    <div>Lifts:</div>
+</div>
+
+<div id="create-goal">
+    <div id="create-goal-title">SET GOAL</div>
+    <form onsubmit="createGoal(event)">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" />
+
+        <label for="duration">Duration:</label>
+        <input type="number" id="duration" name="duration" />
+
+        <label for="exercise">Exercise:</label>
+        <select id="exercise" name="exercise"></select>
+
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" name="reps" />
+
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight" />
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+
+<div id="goals-list">
+    <div>Goals:</div>
+</div>

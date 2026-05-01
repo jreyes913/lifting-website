@@ -1,0 +1,67 @@
+<div id="lateral-nav"></div>
+<div id="create-program">
+    <div id="create-program-title">Create Program</div>
+    <form onsubmit="createProgram(event)">
+        <label for="program-name">Name:</label>
+        <input type="text" id="program-name" name="program-name" />
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div id="programs-list">
+    <div>Programs:</div>
+</div>
+
+<div id="preset-section" style="display:none;">
+    <div id="create-preset">
+        <div id="create-preset-title">Create Preset</div>
+        <form onsubmit="createPreset(event)">
+            <label for="preset-name">Name:</label>
+            <input type="text" id="preset-name" name="preset-name" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="presets-list">
+        <div>Presets:</div>
+    </div>
+</div>
+
+<div id="preset-block-section" style="display:none;">
+    <div id="create-preset-block">
+        <div id="create-preset-block-title">Add Block to Preset</div>
+        <form onsubmit="createPresetBlock(event)">
+            <label for="preset-exercise">Exercise:</label>
+            <select id="preset-exercise" name="preset-exercise"></select>
+
+            <label for="preset-block-order">Order:</label>
+            <input type="number" id="preset-block-order" name="preset-block-order" />
+
+            <label for="preset-goal">Goal:</label>
+            <select id="preset-goal" name="preset-goal"></select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="preset-blocks-list">
+        <div>Preset Blocks:</div>
+    </div>
+</div>
+
+<div id="preset-set-section" style="display:none;">
+    <div id="create-preset-set">
+        <div id="create-preset-set-title">Add Set to Block</div>
+        <form onsubmit="createPresetSet(event)">
+            <label for="preset-reps">Reps:</label>
+            <input type="number" id="preset-reps" name="preset-reps" />
+
+            <label for="preset-set-order">Set Order:</label>
+            <input type="number" id="preset-set-order" name="preset-set-order" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="preset-sets-list">
+        <div>Preset Sets:</div>
+    </div>
+</div>
